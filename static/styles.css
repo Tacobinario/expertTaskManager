@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    display: grid;
+    place-items: center; /* Centra el contenido horizontal y verticalmente */
+    height: 100vh; /* Ocupa toda la pantalla */
+    font-family: Arial, sans-serif;
+    background-color: #808080;
+    text-align: center;
+}
+
+h1 {
+    color: #f0f0f0;
+}
+
+h2 {
+    color: #f0f0f0;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto; /* Define columnas proporcionales */
+    gap: 10px; /* Espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilos para los campos de entrada y botones */
+input, textarea, button {
+    height: 40px; /* Todos los elementos tienen la misma altura */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc;
+}
+
+/* Centrando placeholders en input */
+input {
+    text-align: center;
+}
+
+/* Centrando placeholders en textarea */
+textarea {
+    padding-top: 10px; /* Ajusta el espacio superior */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 40px; /* Ajusta la altura del texto */
+    resize: none; /* Evita que el usuario cambie el tamaño manualmente */
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de tareas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
